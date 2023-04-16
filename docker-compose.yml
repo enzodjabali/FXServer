@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  fxserver:
+    image: routmoute/fxserver:recommended
+    container_name: fxserver
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./server.cfg:/opt/cfx-server/server.cfg
+      - ./resources:/opt/cfx-server/resources
+    ports:
+      - "30120:30120/tcp"
+      - "30120:30120/udp"
+    command: +exec server.cfg
