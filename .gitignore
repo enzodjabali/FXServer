@@ -1,0 +1,7 @@
+/cache/
+/server-data/cache/
+/server-data/resources/\[local\]/
+/server-data/db/
+/server/server-tls.crt
+/server/server-tls.key
+/.idea/
